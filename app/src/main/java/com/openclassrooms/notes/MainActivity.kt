@@ -1,12 +1,10 @@
 package com.openclassrooms.notes
 
-
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.openclassrooms.notes.R
 import com.openclassrooms.notes.databinding.ActivityMainBinding
 import com.openclassrooms.notes.presentation.ViewModel.NotesViewModel
 import com.openclassrooms.notes.widget.NoteItemDecoration
