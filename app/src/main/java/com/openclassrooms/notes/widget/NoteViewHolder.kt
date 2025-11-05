@@ -1,6 +1,7 @@
 package com.openclassrooms.notes.widget
 
 import androidx.recyclerview.widget.RecyclerView
+import com.openclassrooms.notes.Domain.MyNote
 import com.openclassrooms.notes.databinding.NoteBinding
 
 /**
@@ -13,9 +14,9 @@ class NoteViewHolder(private val binding: NoteBinding): RecyclerView.ViewHolder(
      * Binds the view holder to a note.
      * @param note The note to bind to the view holder.
      */
-    fun bind(note: Pair<String, String>) {
-        binding.title.text = note.first
-        binding.body.text = note.second
+    fun bind(note: MyNote) {
+        binding.title.text = note.titleNote
+        binding.body.text = note.bodyNote
     }
 
 }
