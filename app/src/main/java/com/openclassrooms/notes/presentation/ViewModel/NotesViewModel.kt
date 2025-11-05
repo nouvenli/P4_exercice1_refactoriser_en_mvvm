@@ -3,7 +3,7 @@ package com.openclassrooms.notes.presentation.ViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.openclassrooms.notes.Domain.MyNote
-import com.openclassrooms.notes.repository.NotesRepository
+import com.openclassrooms.notes.data.repository.NotesRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

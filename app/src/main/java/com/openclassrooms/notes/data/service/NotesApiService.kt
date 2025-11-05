@@ -1,4 +1,4 @@
-package com.openclassrooms.notes.service
+package com.openclassrooms.notes.data.service
 
 import com.openclassrooms.notes.Domain.MyNote
 
