@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     private val notesViewModel: NotesViewModel by viewModels()
 
-
     private val notesAdapter = NotesAdapter(emptyList())
 
     override fun onCreate(savedInstanceState: Bundle?) {

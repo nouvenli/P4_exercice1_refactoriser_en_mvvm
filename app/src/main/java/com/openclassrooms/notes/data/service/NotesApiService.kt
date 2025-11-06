@@ -1,6 +1,6 @@
 package com.openclassrooms.notes.data.service
 
-import com.openclassrooms.notes.Domain.MyNote
+import com.openclassrooms.notes.domain.modele.MyNote
 
 /**
  * Defines the contract for the API that manages the notes

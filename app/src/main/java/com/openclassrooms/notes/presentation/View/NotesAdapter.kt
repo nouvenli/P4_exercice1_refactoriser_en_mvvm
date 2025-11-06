@@ -3,9 +3,8 @@ package com.openclassrooms.notes.presentation.View
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.openclassrooms.notes.Domain.MyNote
+import com.openclassrooms.notes.domain.modele.MyNote
 import com.openclassrooms.notes.databinding.NoteBinding
-import com.openclassrooms.notes.presentation.View.NoteViewHolder
 
 /**
  * An adapter for displaying a list of notes in a RecyclerView.

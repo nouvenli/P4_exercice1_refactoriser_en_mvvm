@@ -1,6 +1,6 @@
 package com.openclassrooms.notes.data.service
 
-import com.openclassrooms.notes.Domain.MyNote
+import com.openclassrooms.notes.domain.modele.MyNote
 
 /**
  * Implementation of the [NotesApiService] interface that stores note in local
