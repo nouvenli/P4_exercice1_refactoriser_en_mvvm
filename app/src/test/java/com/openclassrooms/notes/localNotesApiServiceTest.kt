@@ -1,6 +1,5 @@
 package com.openclassrooms.notes.data.service
 
-import com.openclassrooms.notes.domain.modele.MyNote
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
