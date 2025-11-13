@@ -11,6 +11,9 @@ class LocalNotesApiService : NotesApiService {
         TODO("Not yet implemented")
     }
 
+    /**
+     * Returns a list of all notes.
+     */
     override fun getAllNotes(): List<MyNote> {
         return listOf(
             MyNote("La vie est belle", "La vie est belle, pleine de choses à voir et à faire. Profitez de chaque moment et ne laissez jamais personne vous dire que vous ne pouvez pas faire ce que vous voulez."),

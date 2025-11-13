@@ -10,11 +10,13 @@ import com.openclassrooms.notes.databinding.ActivityMainBinding
 import com.openclassrooms.notes.presentation.ViewModel.NotesViewModel
 import com.openclassrooms.notes.presentation.View.NoteItemDecoration
 import com.openclassrooms.notes.presentation.View.NotesAdapter
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 /**
  * The main activity for the app.
  */
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     /**
@@ -39,14 +41,15 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * Observer from viewmodel and update adpater
-          */
+     */
     private fun ObserverNotes() {
-lifecycleScope.launch {
-    notesViewModel.notes.collect { listNotes ->
-        notesAdapter.updateNotes(listNotes)
+        lifecycleScope.launch {
+            notesViewModel.notes.collect { listNotes ->
+                notesAdapter.updateNotes(listNotes)
+            }
+        }
     }
-}
-}
+
     /**
      * Initializes the FAB button.
      */

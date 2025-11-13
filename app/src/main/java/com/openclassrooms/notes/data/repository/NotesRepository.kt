@@ -5,15 +5,16 @@ import com.openclassrooms.notes.data.service.NotesApiService
 import com.openclassrooms.notes.domain.repository.INotesRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
 /**
  * Repository class for the notes.
  * @param notesApiService The API service for interacting with notes.
  */
 
-class NotesRepository(
-    private val notesApiService: NotesApiService  // ← AJOUT DU PARAMÈTRE
-) : INotesRepository {
+class NotesRepository @Inject constructor(
+    private val notesApiService: NotesApiService) : INotesRepository {
+
 
     /**
      * A flow that emits a list of all notes.
